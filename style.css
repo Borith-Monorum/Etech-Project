@@ -1,0 +1,79 @@
+*{
+  
+}
+.wrap{
+    background-color: var(--wrap--bg--color);
+}
+:root{
+    --h2--color: darkred;
+    --text--color: black;
+    --wrap--bg--color: #EEEEEE;
+    --container--color: white;
+}
+.dark-theme{
+    --h2--color: yellow;
+    --text--color: white;
+    --wrap--bg--color: #222529;
+    --container--color: black;
+}
+
+.navbar{
+    background-color: var(--wrap--bg--color);
+ 
+}
+.navbar .dropdown a{
+    color: var(--text--color)
+}
+.container{
+    background-color: var(--container--color);
+}
+.content{
+    /* box-shadow: -1px 4px 10px 5px #ddd; */
+}
+.content h2{
+    font-family: 'Khmer M1';
+    font-size: 26px;
+    color:var(--h2--color   );
+}
+.content p{
+    font-family: 'Khmer OS Siemreap';
+    font-size: 18px;
+    color: var(--text--color);
+    line-height: 1.8;
+}
+.content li{
+    font-family: 'Khmer OS Siemreap';
+    font-size: 18px;
+    line-height: 2;
+}
+.content img{
+    padding:5px 0 25px 0;
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+}
+.content span{
+    line-height: 2;
+    font-size:22px;
+    font-weight:bold;
+    color:blue;
+    font-family: 'Khmer OS Siemreap';
+}
+.content ol li{
+    color:var(--text--color);
+}
+.item img{
+    height: 200px;
+    object-fit: cover;
+}
+@media screen and (max-width:800px) 
+{
+
+    
+    .item img{
+        height: 300px;
+        object-fit: cover;
+      
+    } 
+    
+}
