@@ -1,6 +1,13 @@
 *{
   
 }
+pre{
+    margin: 10px 0;
+}
+h4{
+    padding:20px 0;
+    color: darkblue;    
+}
 .wrap{
     background-color: var(--wrap--bg--color);
 }
@@ -9,8 +16,10 @@
     --text--color: black;
     --wrap--bg--color: #EEEEEE;
     --container--color: white;
+    --example--color: blue;
 }
 .dark-theme{
+    --example--color: #259CD8;
     --h2--color: yellow;
     --text--color: white;
     --wrap--bg--color: #222529;
@@ -27,6 +36,9 @@
 .container{
     background-color: var(--container--color);
 }
+
+
+
 .content{
     /* box-shadow: -1px 4px 10px 5px #ddd; */
 }
@@ -50,30 +62,65 @@
     padding:5px 0 25px 0;
     display: block;
     margin: 0 auto;
-    width: 40%;
+    width: 60%;
 }
-.content span{
-    line-height: 2;
-    font-size:22px;
-    font-weight:bold;
-    color:blue;
-    font-family: 'Khmer OS Siemreap';
-}
+
 .content ol li{
     color:var(--text--color);
+}
+.content .example{
+    font-family: 'Khmer OS Siemreap';
+    font-size: 22px;
+    color: var(--example--color);
+    line-height: 1.8;
 }
 .item img{
     height: 200px;
     object-fit: cover;
 }
-@media screen and (max-width:800px) 
-{
+.content .result{
+    box-shadow: 1px 1px 3px 1px #999;
+    border-radius: 5px;
+    background-color: #ddd;
+    padding: 20px ;
+}
+.content pre button{
+    border-radius: 5px;
+    background-color: #1068AF;
+    color:white;
+    border:none;
+    padding: 8px 15px;
+    float: right;
+    font-size: 13pt;
+}
+.content pre button:hover{
+    background-color: #FFCC33;
+    transition: .3s ease-in-out;
+}
 
+
+/* ----footer--- */
+.googlemap{
+    width: 100%;
+
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.googlemap iframe{
     
+    width: 65%;
+    /* filter: invert(100%); */
+}
+@media screen and (max-width:650px) 
+
+{
     .item img{
         height: 300px;
         object-fit: cover;
       
     } 
-    
+    .content img{
+        width:90%;
+    }
 }

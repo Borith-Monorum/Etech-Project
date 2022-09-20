@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/PrismJs/prism.css">
+</head>
+<style>
+
+    .container{
+        height: 100vh;
+        width: 100%;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+
+    }
+    .box{
+        font-size:50px;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="box">
+        <h1>Hi</h1>
+    </div>
+    <button class="copy">copy</button>
+</div>
+</body>
+<script>
+const box = document.querySelector("div.box");
+box.style.width = "300px";
+box.style.height = "300px";
+box.style.backgroundColor = "red";
+box.style.borderRadius = "10px";
+box.style.cursor = "pointer";
+box.innerHTML = "1";
+box.style.fontSize = "150px";
+box.style.color = "#fff";
+box.style.display = "flex";
+box.style.justifyContent = "center";
+box.style.alignItems = "center";
+box.style.transition = "all 0.3s linear";
+box.addEventListener("click",function);
+function function(){
+box.style.backgroundColor = "blue";
+box.innerHTML = "2";
+};
+</script>
+
+</html>

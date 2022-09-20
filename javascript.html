@@ -31,7 +31,7 @@
 
 
     <nav class="navbar sticky-top navbar-expand-lg "> 
-        <!-- --------navbar-------- -->
+     <!-- --------navbar-------- -->
         <div class="container-fluid mx-5">
           <a class="navbar-brand" href="#"><img src="/Image/etech.jpg" width="80px" alt=""></a>
           <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -122,7 +122,7 @@
     <span style="color:darkblue;   color:var(--text--color);">096 226 8884 / 097 226 8884</span> </marquee>
 
     <div class="owl-carousel owl-theme"> 
-    <!-- -------------slide--------- -->
+         <!-- -------------slide--------- -->
         <div class="item">
             <a href="/javascript.html"> <img src="/Image/javascript-736400_1280.png" alt="" style="object-position: bottom;"></a>
         </div>
@@ -146,145 +146,74 @@
     </div>
 
   <div class="container mt-5">   
-    <!-- ---------Content----------- --> 
+     <!-- ---------Content----------- --> 
     <div class="content p-5">
-<div>
-        <!-- lesson 1 -->
-        <h2>១. ដូចម្តេចទៅដែលហៅថា Internet?</h2>
-        <p>Internet គឺជាបណ្តាញនៃការតភ្ជាប់ទំនាក់ទំនងពី Node មួយទៅកាន់ Nodes មួយទៀតពាសពេញពិភពលោក។ 
-            នៅក្នុងការតភ្ជាប់ Network គេអាចបែងចែកជា​ ៣ប្រភេទធំៗ ដូចជា៖
-        </p>
-      <ol>
-        <li>LAN(Local Area Network): បណ្តាញដែរតភ្ជាប់មានលក្ខណះជិតៗគ្នា​ ឬ អាចក្នុងបន្ទប់, អាគារតូចៗជាដើម។</li>
-        <li>MAN(Metropolitan Area Network): បណ្តាញនៃការតភ្ជាប់មានលក្ខណះធំជាងអាចទំហំប៉ុនទីក្រុងធំមួយ។</li>
-        <li>WAN(Wide Area Network): បណ្តាញនៃការតភ្ជាប់មានលក្ខខណះទ្រង់ទ្រាយធំអាចពេញពិភពលោកទាំងមូលតែម្តង។</li>
-      </ol>
-      <img src="/Image/html/NETWORK.jpg"  alt="">
-
-</div>
-            
-<div>
-        <!-- lesson 2 -->
-        <h2>២. ដូចម្តេចទៅដែលហៅថា Websites?</h2>
-        <p>
-          Website គឺជាបណ្តុំនៃគេហទំព័រដែរត្រូវបានគេយកទៅដាក់លើ Internet សម្រាប់ឲ្យគេអាចប្រើប្រាសពាសពេញពីភពលោកតាមរយៈ
-          ISP (internet Service Provice) មានដូចជា Facebook, Gmail, Google, Youtube,.....។​ អ្នកអាចធ្វើការប្រើប្រាស់នូវ
-          Websites បានតាមរយៈការប្រើប្រាស់នូវ URL Website ឬ Web Address។
-        </p>
-        <img src="/Image/html/WWW.jpg" alt="">
-</div>
-        
-<div> 
-        <!-- lesson 3 -->
-        <h2>៣. ដូចម្តេចទៅដែលហៅថា Hosting?</h2>
-        <p>Hosting គឺជាកន្លែងផ្ទុក Website សម្រាប់អោយវាអាចដំណើរការនៅលើ Internet បាន។ Hosting អាចផ្ទុកនូវពត៌មានដែលដំណើរការ Website
-          បានដូចជា Documents, Video, Sound, Images...។
-        </p>
-        <img src="/Image/html/desktop.jpg" alt="">
-        <p>គេហទំព័រដែលអាចទុកចិត្តបានសម្រាប់ការទិញ Hosting និង Domain តាម រយះ Internet។ ចំពោះការទិញ Hosting និង Domain អាចទិញបានតាមរយះ Visa Card៕</p>
-        <img src="/Image/html/list.jpg" alt="">
-        <p>ខាងក្រោមគឺជារូបភាព Server ដែលផ្ទុកទិន្នន័យរាប់លានទិន្នន័យដែលអ្នកអាច ជឿទុកចិត្តបាន។</p>
-        <img src="/Image/html/server.jpg" alt="">
-</div>
 
 <div>
-      <!-- lesson 4 -->
-        <h2>៤. ដូចម្តេចទៅដែរហៅថា Domain?</h2>
-        <p> Domain គឺជាឈ្មោះ ឬ Address ឬ URL របស់ Website ដែលជាតំរូវការ យ៉ាងចាំបាច់បំផុតសម្រាប់ការ 
-          យកគេហទំព័រដែលអ្នកបានបង្កើតហើយនោះដាក់ចូលក្នុង Internet។
-        </p>
-        <img src="/Image/html/domain.jpg" alt="">
+  <!-- ----------Dom js------------- -->
+  <h2>១. DOM Events</h2>
+  <h4>DOM Event Listener</h4>
+ <pre><code class="lang-html lang-js" id="copy">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+
+  &lt;body&gt;
+
+    &lt;script&gt;
+    document.getElementById("myBtn").addEventListener("click", function() {
+      alert("Hello World!");
+    &lt;/script&gt;
+  &lt;/body&gt;
+
+  &lt;/html&gt;
+ </code><button class=" float-end" onclick="copyEvent('copy')">copy</button></pre>
+ <div class="result">
+        <h2>លទ្ធផល</h2>
+      <button id="myBtn">Try it</button>
+
+      <script>
+      document.getElementById("myBtn").addEventListener("click", function() {
+        alert("Hello World!");
+      });
+      </script>
+ </div>
+
+ <h4>ChangeText(this)</h4>
+  <pre><code class="lang-html lang-js" id="copy1">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+
+  &lt;body&gt;
+
+    &lt;script&gt;
+    function changeText(id) {
+      id.innerHTML = "Ooops!";
+    }
+    &lt;/script&gt;
+  &lt;/body&gt;
+
+  &lt;/html&gt;
+ 
+ </code> <button class=" float-end" onclick="copyEvent('copy1')">copy</button></pre>
+ <div class="result">
+  <h2>លទ្ធផល</h2>
+  <h2>JavaScript HTML Events</h2>
+ <p onclick="changeText(this)">Click me</p>
+ 
+ <script>
+ function changeText(id) {
+   id.innerHTML = "Clicked!";
+ }
+ </script>
+ </div>
+
 </div>
-            
-<div > 
-        <!-- lession 5 -->
-            <h2>៥. អ្វីទៅជា HTML?</h2>
-            <p>HTML ឈរលើពាក្យថា Hyper Text Markup Language គឺជាភាសារ សម្រាប់បង្កើតនូវ Website ជាទម្រង់ 
-              Web Static ដំណើរការខាងផ្នែក Client។ HTML គេអាចប្រើប្រាស់ វាសម្រាប់ដាក់ Text, Video, Sound, Images...។
-            </p>
-            <img src="/Image/html/html.jpg" alt="">
-            <img src="/Image/html/htmlcodejpg.jpg" style="width:70%;" alt="">
-            <p class="example">ឧទាហរណ៍ ១</p>   
-            
-            
-            <pre class=""><code class="lang-html" id="copy">   
-              &lt;html&gt;
-              &lt;head&gt;
-              &lt;title&gt;Demo HTML first &lt;/title&gt;
-              &lt;/head&gt;
-              &lt;body&gt;
-              &lt;h1&gt;ETEC Center 1&lt;/h1&gt;
-              &lt;h1&gt;ETEC Center 2&lt;/h1&gt;
-              &lt;h1&gt;ETEC Center 3&lt;/h1&gt;
-              &lt;h1&gt;ETEC Center 4&lt;/h1&gt;
-              &lt;h1&gt;ETEC Center 5&lt;/h1&gt;
-              &lt;h1&gt;ETEC Center 6&lt;/h1&gt;
-              &lt;/body&gt;
-              &lt;/html&gt;           
-            </code> <button class="btn btn-primary float-end" onclick="copyEvent('copy')"  >copy</button></pre>
-            
-            <img src="/Image/html/រូបភាពអេក្រង់ 2022-09-02 172243.png" alt="">
-            <p class="example">ឧទាហរណ៍ ២</p>   
-            
-            
-            <pre class="">
-              <code class="lang-html" id="copy1"> 
-                &lt;html&gt;
-                &lt;head&gt;
-                &lt;title&gt;Hello Etec &lt;/title&gt;
-                &lt;/head&gt;
-                &lt;body&gt;
-                &lt;h1&gt;Welcome to ETEC CENTER &lt;/h1&gt;
-                &lt;h1 /&gt;
-                &lt;p&gt;
-                &lt;b&gt;ETEC Center 1&lt;/b&gt;
-                &lt;i&gt;ETEC Center 2&lt;/i&gt;
-                &lt;u&gt;ETEC Center 3&lt;/u&gt;
-                &lt;/p&gt;
-                &lt;br/&gt; &lt;br/&gt;
-                &lt;h1 /&gt;
-                &lt;/body&gt;
-                &lt;div&gt;
-                &lt;strong&gt; I love HTML, Bootstrap &lt;strong&gt; &lt;br/&gt;
-                I love HTML, CSS &lt;sup&gt; Bootstrap &lt;/sup&gt; &lt;br/&gt;
-                I love HTML, CSS &lt;sup&gt; Bootstrap &lt;/sup&gt; &lt;br/&gt;
-                &lt;/div&gt;
-                &lt;hr color=&quot;red&quot; width= &quot;5px&quot; &gt;
-                &lt;/html&gt; 
-              </code>
-                  <button type="button" class="btn btn-success float-end copy" onclick="copyEvent('copy1')">Copy</button>
-                </pre>
 
-                <img src="/Image/html/img1.png" width="100%" alt="">
-                <p class="example">ឧទាហរណ៍ ៣</p>   
 
-               <pre><code class="lang-html" id="copy2">
-        &lt;html&gt;
-          &lt;head&gt;
-              &lt;title&gt;Hello ETEC&lt;/title&gt;
-          &lt;/head&gt;
-            &lt;font color=&quot;red&quot; size=&quot;25pt&quot; 
-              &lt;center&gt;
-              Hello Crush,...
-              &lt;/center&gt;
-              &lt;hr/&gt;
-                &lt;p style=&quot;font-size:48px;&quot;&gt; 
-                  &​#128512; &#​128516; &#​128525; &#​128151;
-                &lt;/p&gt;
-            &lt;/font&gt;
-            &lt;span style=&quot;font-size:100px;&quot; &#​9997;&gt; &lt;/span&gt; 
-          &lt;hr/&gt;  
-          &lt;body&gt;
-          &lt;/body&gt;
-        &lt;/html&gt;
+    </div>   
+  </div>
 
-                </code> <button type="button" class="btn btn-success float-end copy" onclick="copyEvent('copy2')">copy</button></pre>
-              <img src="/Image/html/img2.png" width=100%; alt="">
-</div>
-       
-      </div>
-
-      <footer class="footer">
+      <footer class="footer ">  
         <div class="row">
           <div class="googlemap">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7817.841194271465!2d104.8848455!3d11.5575499!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951ec69282a81%3A0x39927a4ad959da71!2sETEC%20I.T%20Training%20Center!5e0!3m2!1sen!2skh!4v1662189789906!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
