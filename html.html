@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+    <!-- ----Fontawesome---- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+
+
+
+<!-- -----PrismJS----- -->
+<link rel="stylesheet" href="/PrismJs/prism.css">
+   <!-- Link Swiper's CSS -->
+   <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+ />
+ <style>
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+
+ 
+
+  .swiper {
+    background-color: var(--container--color);
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+
+  @media (max-width:900px){
+    .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height:400px;
+  }
+  }
+</style>
+<style>
+    body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+
+    <nav  class="navbar navbar-expand-lg " style="background-color: #2D3389;"> 
+        <!-- --------navbar-------- -->
+        <div class="container-fluid mx-5" style="background-color: #2D3389;">
+          <a class="navbar-brand" href="#"><img src="/Image/etech.jpg" width="70px" alt=""></a>
+            <ul class="navbar-nav me-auto  mb-lg-0" style="font-size:25px;">                
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-light ms-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Tutorial
+                      </a>
+                      <ul class="dropdown-menu " style="font-family:khmer os siemreap; color: var(--text--color); background-color: var(--container--color); border: 1px solid white">
+                        <li><a class="dropdown-item " href="#lesson1">HTML</a></li>
+                        <li><a class="dropdown-item" href="#lesson2">CSS</a></li>
+                        <li><a class="dropdown-item" href="#lesson3">JavaScript</a></li>
+                        <li><a class="dropdown-item" href="#lesson4">Bootstrap</a></li>
+                        <li><a class="dropdown-item" href="#lesson5">Jquery</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Soon...</a></li>
+                      </ul>
+                    </li>  
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Video
+                      </a>
+                      <ul class="dropdown-menu " style="font-family:khmer os siemreap; color: var(--text--color); background-color: var(--container--color); border: 1px solid white">
+                        <li><a class="dropdown-item" href="#lesson1">HTML</a></li>
+                        <li><a class="dropdown-item" href="#lesson2">CSS</a></li>
+                        <li><a class="dropdown-item" href="#lesson3">JavaScript</a></li>
+                        <li><a class="dropdown-item" href="#lesson4">Bootstrap</a></li>
+                        <li><a class="dropdown-item" href="#lesson5">Jquery</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Soon...</a></li>
+                      </ul>
+                    </li>  
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          More
+                      </a>
+                      <ul class="dropdown-menu " style="font-family:khmer os siemreap; color: var(--text--color); background-color: var(--container--color); border: 1px solid white">
+   
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Soon...</a></li>
+                      </ul>
+                    </li>  
+            </ul>                
+                <ul class="list-unstyled  nav" style="font-size: 20px; font-weight: bolder;font-family: inherit;">
+                  <li class="nav-item"><a href="/Register.html" class="nav-link text-light btn btn-success me-2 border rounded-pill px-4" style="color: var(--text--color)">Register</a></li>
+                  <li class="nav-item"><a href="/Login.html" class="nav-link  text-light btn btn-danger ms-2 border rounded-pill px-4" style="color: var(--text--color)">Login</a></li>   
+                
+                </ul>
+  
+        </div>
+    </nav>  
+
+
+    
+    <nav class="navbar navbar-expand-sm sticky-top " style="box-shadow: 1px 1px 2px 1px #eee;">
+          <!-- --------------Menu----------------- -->
+      <div class="container-fluid ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      
+          <a class=" navbar-brand" href="#">
+            <a class="navbar-brand" href="#"><img src="/Image/etech.jpg" width="50px" alt=""></a>
+            <div class="navbar nav mynav ">
+              <a class="nav-link active fs-5 " aria-current="page" href="#">HTML</a>
+              <a class="nav-link  fs-5" href="#">CSS</a>
+              <a class="nav-link  fs-5" href="#">Bootstrap</a>
+              <a class="nav-link  fs-5" href="/javascript.html">JavaScript</a>
+              <a class="nav-link  fs-5" href="#">Jquery</a>
+            </div>
+          </a>
+          <ul class="list-unstyled d-sm-none">
+            <li class="nav-item"><a class="nav-link" href="">HTML HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Introduction</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Editors</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Basic</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Elements</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Attributes</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Headings</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Paragraphs</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Styles</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Formatting</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Quotations</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Comments</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Colors</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML CSS</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Links</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Images</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Favicon</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Table</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Lists</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Block & Inline</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Classes</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Id</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Iframes</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML JavaScript</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML File Paths</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Head</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Layout</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Responsive</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Computercode</a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Semantics </a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Style Guide </a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Entities </a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Symbols </a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Emojis </a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML Charset </a></li>
+            <li class="nav-item"><a class="nav-link" href="">HTML URL Encode </a></li>  
+          </ul>
+      </div>
+
+     
+      
+          
+         <i class="fa-solid fa-search fs-2 me-3" style="color: var(--text--color);"></i>
+          <img  src="/Image/moon.png" class="ms-4 " width="40px" alt="" id="icon">
+      </div>
+    </nav>
+
+
+    <marquee behavior="" direction="left" style="padding: 10px 0; font-size: 20px; word-spacing: 5px;  color:white; background-color: #575fd1;"><img src="/Image/etech.jpg"  width="30px;" alt="">  ETEC I.T Professional Training Center
+    <span style="color:white;   ">096 226 8884 / 097 226 8884</span> </marquee>
+
+  
+
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">  <img src="/Image/​etect/283564861_1163173637863442_8445164087088331689_n.jpg" /></div>
+        <div class="swiper-slide">    <img src="/Image/​etect/282266780_1163172187863587_5697526868562403545_n.jpg" /></div>
+        <div class="swiper-slide">        <img src="/Image/​etect/281878268_1163172217863584_145693528326355389_n.jpg" /></div>
+        <div class="swiper-slide">       <img src="/Image/​etect/281723298_1163171944530278_4634983230122164074_n.jpg" /></div>
+        <div class="swiper-slide">        <img src="/Image/​etect/281349517_1163172154530257_8891702792623960221_n.jpg" /></div>
+        <div class="swiper-slide">        <img src="/Image/​etect/281078482_1163172044530268_1799465082991174163_n.jpg" /></div>
+        <div class="swiper-slide">       <img src="/Image/​etect/281054277_1163172287863577_2101864921279754017_n.jpg" /></div>
+        <div class="swiper-slide"> <img src="/Image/​etect/281021630_1163172087863597_2374338799097767061_n.jpg"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+<div class="row mt-5">   
+
+    <div class=" col-3 " style="background-color: var(--sidebar--bg); position: relative;">
+       <!-- ---sidebar--- -->
+      <div class="sidebar">
+        <h4 class="text-center bg-primary text-light fw-bold">HTML TUtorial</h4>
+        <ul class="list-unstyled">
+          <li class="nav-item"><a class="nav-link" href="">HTML HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Introduction</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Editors</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Basic</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Elements</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Attributes</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Headings</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Paragraphs</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Styles</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Formatting</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Quotations</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Comments</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Colors</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML CSS</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Links</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Images</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Favicon</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Table</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Lists</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Block & Inline</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Classes</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Id</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Iframes</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML JavaScript</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML File Paths</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Head</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Layout</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Responsive</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Computercode</a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Semantics </a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Style Guide </a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Entities </a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Symbols </a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Emojis </a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML Charset </a></li>
+          <li class="nav-item"><a class="nav-link" href="">HTML URL Encode </a></li>  
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- ---------Content----------- --> 
+<div class=" col-7 p-5">  
+  <div class="content">
+<div id="lesson1"> 
+      <!-- lesson 1 -->
+      <h2 >១. ដូចម្តេចទៅដែលហៅថា Internet?</h2>
+      <p>Internet គឺជាបណ្តាញនៃការតភ្ជាប់ទំនាក់ទំនងពី Node មួយទៅកាន់ Nodes មួយទៀតពាសពេញពិភពលោក។ 
+          នៅក្នុងការតភ្ជាប់ Network គេអាចបែងចែកជា​ ៣ប្រភេទធំៗ ដូចជា៖
+      </p>
+    <ol>
+      <li>LAN(Local Area Network): បណ្តាញដែរតភ្ជាប់មានលក្ខណះជិតៗគ្នា​ ឬ អាចក្នុងបន្ទប់, អាគារតូចៗជាដើម។</li>
+      <li>MAN(Metropolitan Area Network): បណ្តាញនៃការតភ្ជាប់មានលក្ខណះធំជាងអាចទំហំប៉ុនទីក្រុងធំមួយ។</li>
+      <li>WAN(Wide Area Network): បណ្តាញនៃការតភ្ជាប់មានលក្ខខណះទ្រង់ទ្រាយធំអាចពេញពិភពលោកទាំងមូលតែម្តង។</li>
+    </ol>
+    <img src="/Image/html/NETWORK.jpg"  alt="">
+
+</div>
+          
+<div id="lesson2">
+      <!-- lesson 2 -->
+      <h2>២. ដូចម្តេចទៅដែលហៅថា Websites?</h2>
+      <p>
+        Website គឺជាបណ្តុំនៃគេហទំព័រដែរត្រូវបានគេយកទៅដាក់លើ Internet សម្រាប់ឲ្យគេអាចប្រើប្រាសពាសពេញពីភពលោកតាមរយៈ
+        ISP (internet Service Provice) មានដូចជា Facebook, Gmail, Google, Youtube,.....។​ អ្នកអាចធ្វើការប្រើប្រាស់នូវ
+        Websites បានតាមរយៈការប្រើប្រាស់នូវ URL Website ឬ Web Address។
+      </p>
+      <img src="/Image/html/WWW.jpg" alt="">
+</div>
+      
+<div id="lesson3"> 
+      <!-- lesson 3 -->
+      <h2>៣. ដូចម្តេចទៅដែលហៅថា Hosting?</h2>
+      <p>Hosting គឺជាកន្លែងផ្ទុក Website សម្រាប់អោយវាអាចដំណើរការនៅលើ Internet បាន។ Hosting អាចផ្ទុកនូវពត៌មានដែលដំណើរការ Website
+        បានដូចជា Documents, Video, Sound, Images...។
+      </p>
+      <img src="/Image/html/desktop.jpg" alt="">
+      <p>គេហទំព័រដែលអាចទុកចិត្តបានសម្រាប់ការទិញ Hosting និង Domain តាម រយះ Internet។ ចំពោះការទិញ Hosting និង Domain អាចទិញបានតាមរយះ Visa Card៕</p>
+      <img src="/Image/html/list.jpg" alt="">
+      <p>ខាងក្រោមគឺជារូបភាព Server ដែលផ្ទុកទិន្នន័យរាប់លានទិន្នន័យដែលអ្នកអាច ជឿទុកចិត្តបាន។</p>
+      <img src="/Image/html/server.jpg" alt="">
+</div>
+
+<div id="lesson4">
+<!-- lesson 4 -->
+      <h2>៤. ដូចម្តេចទៅដែរហៅថា Domain?</h2>
+      <p> Domain គឺជាឈ្មោះ ឬ Address ឬ URL របស់ Website ដែលជាតំរូវការ យ៉ាងចាំបាច់បំផុតសម្រាប់ការ 
+        យកគេហទំព័រដែលអ្នកបានបង្កើតហើយនោះដាក់ចូលក្នុង Internet។
+      </p>
+      <img src="/Image/html/domain.jpg" alt="">
+</div>
+          
+<div id="lesson5">      
+  <!-- lession 5 -->
+          <h2>៥. អ្វីទៅជា HTML?</h2>
+          <p>HTML ឈរលើពាក្យថា Hyper Text Markup Language គឺជាភាសារ សម្រាប់បង្កើតនូវ Website ជាទម្រង់ 
+            Web Static ដំណើរការខាងផ្នែក Client។ HTML គេអាចប្រើប្រាស់ វាសម្រាប់ដាក់ Text, Video, Sound, Images...។
+          </p>
+          <img src="/Image/html/html.jpg" alt="" style="width:30%;" >
+          <img src="/Image/html/htmlcodejpg.jpg" style="width:70%;" alt="">
+        
+          <div class="code">
+            <p class="example">ឧទាហរណ៍ ១</p>              
+            <pre class=""><code class="lang-html" id="copy">   
+                &lt;html&gt;
+                &lt;head&gt;
+                &lt;title&gt;Demo HTML first &lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;h1&gt;ETEC Center 1&lt;/h1&gt;
+                &lt;h3&gt;ETEC Center 3&lt;/h3&gt;
+                &lt;h3&gt;ETEC Center 3&lt;/h3&gt;
+                &lt;h5&gt;ETEC Center 5&lt;/h5&gt;
+                &lt;h5&gt;ETEC Center 5&lt;/h5&gt;
+                &lt;h6&gt;ETEC Center 6&lt;/h6&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;           
+              </code> <button class="btn btn-primary float-end" onclick="copyEvent('copy')"  >copy</button>
+            </pre>
+          </div>
+    
+          <div class="result">
+            <h2>លទ្ធផល</h2>
+            <h1>ETEC Center 1</h1>
+            <h3>ETEC Center 3</h3>
+            <h3>ETEC Center 3</h3>
+            <h5>ETEC Center 5</h5>
+            <h5>ETEC Center 5</h5>
+            <h6>ETEC Center 6</h6>
+          </div>
+  
+        
+        
+        <div class="code">
+          <p class="example">ឧទាហរណ៍ ២</p>              
+          <pre class="">
+            <code class="lang-html" id="copy1"> 
+              &lt;html&gt;
+              &lt;head&gt;
+              &lt;title&gt;Hello Etec &lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+              &lt;h1&gt;Welcome to ETEC CENTER &lt;/h1&gt;
+              &lt;h1 /&gt;
+              &lt;p&gt;
+              &lt;b&gt;ETEC Center 1&lt;/b&gt;
+              &lt;i&gt;ETEC Center 2&lt;/i&gt;
+              &lt;u&gt;ETEC Center 3&lt;/u&gt;
+              &lt;/p&gt;
+              &lt;br/&gt; &lt;br/&gt;
+              &lt;h1 /&gt;
+              &lt;/body&gt;
+              &lt;div&gt;
+              &lt;strong&gt; I love HTML, Bootstrap &lt;strong&gt; &lt;br/&gt;
+              I love HTML, CSS &lt;sup&gt; Bootstrap &lt;/sup&gt; &lt;br/&gt;
+              I love HTML, CSS &lt;sup&gt; Bootstrap &lt;/sup&gt; &lt;br/&gt;
+              &lt;/div&gt;
+              &lt;hr color=&quot;red&quot; width= &quot;5px&quot; &gt;
+              &lt;/html&gt; 
+            </code>
+                <button type="button" class="btn btn-success float-end copy" onclick="copyEvent('copy1')">Copy</button>
+              </pre>
+        </div>
+        
+
+              <img src="/Image/html/img1.png" width="100%" alt="">
+              <div class="code">
+                <p class="example">ឧទាហរណ៍ ៣</p>   
+                <pre><code class="lang-html" id="copy2">
+        &lt;html&gt;
+          &lt;head&gt;
+              &lt;title&gt;Hello ETEC&lt;/title&gt;
+          &lt;/head&gt;
+            &lt;font color=&quot;red&quot; size=&quot;25pt&quot; 
+              &lt;center&gt;
+              Hello Crush,...
+              &lt;/center&gt;
+              &lt;hr/&gt;
+                &lt;p style=&quot;font-size:48px;&quot;&gt; 
+                  &​#128512; &#​128516; &#​128525; &#​128151;
+                &lt;/p&gt;
+            &lt;/font&gt;
+            &lt;span style=&quot;font-size:100px;&quot; &#​9997;&gt; &lt;/span&gt; 
+          &lt;hr/&gt;  
+          &lt;body&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;
+
+                </code> <button type="button" class="btn btn-success float-end copy" onclick="copyEvent('copy2')">copy</button></pre>
+              </div>
+              <div class="result">
+                <h2>លទ្ធផល</h2>
+                <font color="red" size="25pt">
+                <center>
+                Hello Crush,...
+                </center>
+                <hr/>
+                  <p style="font-size:48px;"> 
+                    &#128512; &#128516; &#128525; &#128151;
+                  </p>
+              </font>
+              <span style="font-size:100px;" &#9997;> </span> 
+            <hr/> 
+              </div>
+
+</div> 
+</div>   
+  <footer class=" Address">
+    <h1 class="text-center mb-5">Address</h1>
+    <div class="row">
+      <div class="googlemap mb-5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7817.841194271465!2d104.8848455!3d11.5575499!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951ec69282a81%3A0x39927a4ad959da71!2sETEC%20I.T%20Training%20Center!5e0!3m2!1sen!2skh!4v1662189789906!5m2!1sen!2skh" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  
+  </footer>
+</div>
+<div class=" col-2  ads text-center " style="background-color: var(--sidebar--bg);"> 
+  <img src="/Image/ads/12485347794846134331.png" class="mt-5"  alt=""><br>
+  <img src="/Image/ads/16497773530891370813.png" class="mt-5 w-50"  alt="">
+  <img src="/Image/ads/7709431071627231265.png" class="stick w-75 mt-5" alt="">
+</div>
+</div>  
+
+  </div>
+
+
+
+   <!-- -----slide(js)---- -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+<script> 
+//---copy---
+  function copyEvent(id){
+    var b = document.getElementById(id);
+    window.getSelection().selectAllChildren(b);
+    document.execCommand("Copy")
+  }
+</script>
+
+<script>
+ // --coopy--
+const copy = document.querySelector("button.copy");
+copy.addEventListener("click", function(){
+copy.innerHTML = "coped";
+})
+</script>
+
+<!-- -----darkmode----- -->
+<script src="/darkmode.js"></script>
+
+<!-- ----PrismJs---  -->
+<script src="/PrismJs/prism.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+<footer class="text-light  bg-dark">
+  <!-- ---footer--- -->
+  <div class="container p-4 bg-dark">
+    <div class="row pb-4">
+      <div class="col-lg-6 col-md-12">
+        <h5 class="mb-3"><a class="mb-4" href="#"><img src="/Image/etech.jpg" width="80px" alt=""></a></h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+          voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-6  d-flex justify-content-center">
+        <ul class="" >
+          <h5 class="text-uppercase mb-4">Front-End</h5>
+          <li>
+            <a class="nav-link" href="#">HTML</a>
+          </li>
+          <li>
+            <a  class="nav-link" href="">CSS</a>
+          </li>
+          <li>
+            <a class="nav-link" href="">Bootstrap</a>
+          </li>
+          <li>
+            <a  class="nav-link" href="">JavaScript</a>
+          </li>
+          <li>
+            <a  class="nav-link" href="">Jquery</a>
+          </li>
+      </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6  d-flex justify-content-center">
+        <ul class="" >
+          <h5 class="text-uppercase mb-4">Back-End</h5>
+          <li>
+            <a class="nav-link" href="#">PHP</a>
+          </li>
+          <li>
+            <a  class="nav-link" href="">SQL</a>
+          </li>
+          <li>
+            <a class="nav-link" href="">NodeJs</a>
+          </li>
+          <li>
+            <a  class="nav-link" href="">Laravel</a>
+          </li>
+          <li>
+            <a  class="nav-link" href="">Phyton</a>
+          </li>
+      </ul>
+      </div>
+    </div>
+    
+    <div class="row bg-primary bg-opacity-10 p-4">
+      <div class="col-lg-6 col-md-6 d-flex align-self-center">
+        © 2020 Copyright
+        <a class="text-white nav-link ms-1" href="">ETECT</a>
+      </div>
+      <div class="icon col-lg-6 col-md-6 d-flex justify-content-end">
+        <ul class="nav d-flex list-unstyled">
+          <li><i class="facebook fa-brands fa-facebook fs-1 px-1 "></i></li>
+          <li><i class="telegram fa-brands fa-telegram fs-1 px-1 "></i>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>

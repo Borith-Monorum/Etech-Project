@@ -1,3 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,269 +24,434 @@
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
-    <!-- Owlcarousel  -->
-<link rel="stylesheet" href="/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
 
-    <!-- javascript  -->
-<script src="/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"> </script>
-<script src="/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.js"> </script>
+
 
 <!-- -----PrismJS----- -->
 <link rel="stylesheet" href="/PrismJs/prism.css">
+   <!-- Link Swiper's CSS -->
+   <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+ />
+ <style>
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
 
+ 
+
+  .swiper {
+    background-color: var(--container--color);
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+
+  @media (max-width:900px){
+    .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height:400px;
+  }
+  }
+</style>
+<style>
+    body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+</style>
 </head>
 
 <body>
 <div class="wrap">
 
 
-    <nav class="navbar sticky-top navbar-expand-lg "> 
-     <!-- --------navbar-------- -->
-        <div class="container-fluid mx-5">
-          <a class="navbar-brand" href="#"><img src="/Image/etech.jpg" width="80px" alt=""></a>
-          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link active"style="color:var(--text--color);" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          HTML
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#"></a></li>
-                            <li><a class="dropdown-item" href="#">Inter</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            CSS
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#"></a></li>
-                            <li><a class="dropdown-item" href="#">Inter</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Javascript
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                      </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Bootstrap
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Jquery
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </li>
+  <nav  class="navbar navbar-expand-lg " style="background-color: #2D3389;"> 
+    <!-- --------navbar-------- -->
+    <div class="container-fluid mx-5" style="background-color: #2D3389;>
+      <a class="navbar-brand" href="#"><img src="/Image/etech.jpg" width="70px" alt=""></a>
+        <ul class="navbar-nav me-auto  mb-lg-0" style="font-size:25px;">                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light ms-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tutorial
+                  </a>
+                  <ul class="dropdown-menu " style="font-family:khmer os siemreap; color: var(--text--color); background-color: var(--container--color); border: 1px solid white">
+                    <li><a class="dropdown-item" href="#lesson1">HTML</a></li>
+                    <li><a class="dropdown-item" href="#lesson2">CSS</a></li>
+                    <li><a class="dropdown-item" href="#lesson3">JavaScript</a></li>
+                    <li><a class="dropdown-item" href="#lesson4">Bootstrap</a></li>
+                    <li><a class="dropdown-item" href="#lesson5">Jquery</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Soon...</a></li>
                   </ul>
-     
-        
-                  <form class="d-flex mt-4  " role="search" >
-                    <input class="form-control me-2 w-100" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-              <form class="d-flex " role="search">
-                
-                <ul class="navbar-nav">
-                  <li class="nav-item"><a href="/Register.html" class="nav-link " style="color: var(--text--color)">Register</a></li>
-                  <li class="nav-item"><a href="/Login.html" class="nav-link " style="color: var(--text--color)">Login</a></li>   
-                  <img src="/Image/moon.png" class="ms-4" width="40px" alt="" id="icon">
-                </ul>
-              </form>
-          </div>
-          
-        </div>
-    </nav>  
+                </li>  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Video
+                  </a>
+                  <ul class="dropdown-menu " style="font-family:khmer os siemreap; color: var(--text--color); background-color: var(--container--color); border: 1px solid white">
+                    <li><a class="dropdown-item" href="#lesson1">HTML</a></li>
+                    <li><a class="dropdown-item" href="#lesson2">CSS</a></li>
+                    <li><a class="dropdown-item" href="#lesson3">JavaScript</a></li>
+                    <li><a class="dropdown-item" href="#lesson4">Bootstrap</a></li>
+                    <li><a class="dropdown-item" href="#lesson5">Jquery</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Soon...</a></li>
+                  </ul>
+                </li>  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      More
+                  </a>
+                  <ul class="dropdown-menu " style="font-family:khmer os siemreap; color: var(--text--color); background-color: var(--container--color); border: 1px solid white">
 
-    <marquee behavior="" direction="left" style="color:var(--text--color);"><img src="/Image/etech.jpg"  width="30px;" alt="">  ETEC I.T Professional Training Center
-    <span style="color:darkblue;   color:var(--text--color);">096 226 8884 / 097 226 8884</span> </marquee>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Soon...</a></li>
+                  </ul>
+                </li>  
+        </ul>                
+            <ul class="list-unstyled  nav" style="font-size: 20px; font-weight: bolder;font-family: inherit;">
+              <li class="nav-item"><a href="/Register.html" class="nav-link text-light btn btn-success me-2 border rounded-pill px-4" style="color: var(--text--color)">Register</a></li>
+              <li class="nav-item"><a href="/Login.html" class="nav-link  text-light btn btn-danger ms-2 border rounded-pill px-4" style="color: var(--text--color)">Login</a></li>   
+            
+            </ul>
 
-    <div class="owl-carousel owl-theme"> 
-         <!-- -------------slide--------- -->
-        <div class="item">
-            <a href="/javascript.html"> <img src="/Image/javascript-736400_1280.png" alt="" style="object-position: bottom;"></a>
-        </div>
-        <div class="item">
-            <a href=""> <img src="/Image/CSS-3png.webp" alt=""></a>
-           
-        </div>
-        <div class="item">
-            <a href=""> <img src="/Image/project_html5_promo_small.jpg" alt=""></a>
-           
-        </div>
-        <div class="item">
-            <a href=""> <img src="/Image/jquery.jpg" alt=""></a>
-         
-        </div>
-        <div class="item">
-            <a href=""> <img src="/Image/snip-thumb-700x466.jpg" alt=""></a>
-        </div>
-
+    </div>
+</nav>  
     
+    <nav class="navbar navbar-expand-sm sticky-top " style="box-shadow: 1px 1px 2px 1px #eee;">
+          <!-- --------------Menu----------------- -->
+      <div class="container-fluid ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      
+          <a class=" navbar-brand" href="#">
+            <a class="navbar-brand" href="#"><img src="/Image/etech.jpg" width="50px" alt=""></a>
+            <div class="navbar nav mynav">
+              <a class="nav-link  fs-5" aria-current="page" href="/html.html">HTML</a>
+              <a class="nav-link  fs-5" href="#">CSS</a>
+              <a class="nav-link  fs-5" href="#">Bootstrap</a>
+              <a class="nav-link active fs-5" href="">JavaScript</a>
+              <a class="nav-link  fs-5" href="#">Jquery</a>
+            </div>
+          </a>
+         <ul class="list-unstyled d-sm-none">
+          
+          <li class="nav-item"><a class="nav-link" href="">Js Where To</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Output</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Statements</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Syntax</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Comments</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Variables</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Let</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Const</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Operators</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Arithmetic</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Assigment</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Precedence</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Data Types</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Functions</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Objects</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Strings</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS String Methods</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS String Search</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS String Templates</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Numbers</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Number Methods</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Arrays</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Array Methods</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Array Sort</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS iteration</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Array Const</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Dates</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Date Formats</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Get Methods</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Set Methods</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Math</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Random </a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Comparisons </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS If else </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Switch </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Loop For </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Loop For In  </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Loop for Of </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Loop While </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Break </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Iterables </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Mypteof </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Type Conversion </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Bitwise </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS RegExp </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Errors </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Scope </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Hoisting </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Strict Mode </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS this Keyword </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Arrow function </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Classes </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Modules </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Json </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Debugging </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Style Guide </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Best Practices </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Mistakes </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Practice </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Mistakes </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS  Performance</a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS  Reserved Words</a></li>  
+        </ul>
+      </div>
+
+     
+      
+          
+         <i class="fa-solid fa-search fs-2 me-3" style="color: var(--text--color);"></i>
+          <img  src="/Image/moon.png" class="ms-4 " width="40px" alt="" id="icon">
+      </div>
+    </nav>
+
+
+    <marquee behavior="" direction="left" style="padding: 10px 0; font-size: 20px; word-spacing: 5px;  color:white; background-color: #575fd1;"><img src="/Image/etech.jpg"  width="30px;" alt="">  ETEC I.T Professional Training Center
+    <span style="color:white;   ">096 226 8884 / 097 226 8884</span> </marquee>
+
+  
+
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">  <img src="/Image/​etect/283564861_1163173637863442_8445164087088331689_n.jpg" /></div>
+        <div class="swiper-slide">    <img src="/Image/​etect/282266780_1163172187863587_5697526868562403545_n.jpg" /></div>
+        <div class="swiper-slide">        <img src="/Image/​etect/281878268_1163172217863584_145693528326355389_n.jpg" /></div>
+        <div class="swiper-slide">       <img src="/Image/​etect/281723298_1163171944530278_4634983230122164074_n.jpg" /></div>
+        <div class="swiper-slide">        <img src="/Image/​etect/281349517_1163172154530257_8891702792623960221_n.jpg" /></div>
+        <div class="swiper-slide">        <img src="/Image/​etect/281078482_1163172044530268_1799465082991174163_n.jpg" /></div>
+        <div class="swiper-slide">       <img src="/Image/​etect/281054277_1163172287863577_2101864921279754017_n.jpg" /></div>
+        <div class="swiper-slide"> <img src="/Image/​etect/281021630_1163172087863597_2374338799097767061_n.jpg"></div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
 
-  <div class="container mt-5">   
-     <!-- ---------Content----------- --> 
-    <div class="content p-5">
+<div class="row mt-5">   
 
-<div>
-  <!-- ----------Dom js------------- -->
-  <h2>១. DOM Events</h2>
-  <h4>DOM Event Listener</h4>
- <pre><code class="lang-html lang-js" id="copy">
-  &lt;!DOCTYPE html&gt;
-  &lt;html&gt;
-
-  &lt;body&gt;
-
-    &lt;script&gt;
-    document.getElementById("myBtn").addEventListener("click", function() {
-      alert("Hello World!");
-    &lt;/script&gt;
-  &lt;/body&gt;
-
-  &lt;/html&gt;
- </code><button class=" float-end" onclick="copyEvent('copy')">copy</button></pre>
- <div class="result">
-        <h2>លទ្ធផល</h2>
-      <button id="myBtn">Try it</button>
-
-      <script>
-      document.getElementById("myBtn").addEventListener("click", function() {
-        alert("Hello World!");
-      });
-      </script>
- </div>
-
- <h4>ChangeText(this)</h4>
-  <pre><code class="lang-html lang-js" id="copy1">
-  &lt;!DOCTYPE html&gt;
-  &lt;html&gt;
-
-  &lt;body&gt;
-
-    &lt;script&gt;
-    function changeText(id) {
-      id.innerHTML = "Ooops!";
-    }
-    &lt;/script&gt;
-  &lt;/body&gt;
-
-  &lt;/html&gt;
- 
- </code> <button class=" float-end" onclick="copyEvent('copy1')">copy</button></pre>
- <div class="result">
-  <h2>លទ្ធផល</h2>
-  <h2>JavaScript HTML Events</h2>
- <p onclick="changeText(this)">Click me</p>
- 
- <script>
- function changeText(id) {
-   id.innerHTML = "Clicked!";
- }
- </script>
- </div>
-
-</div>
-
-
-    </div>   
-  </div>
-
-      <footer class="footer ">  
-        <div class="row">
-          <div class="googlemap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7817.841194271465!2d104.8848455!3d11.5575499!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951ec69282a81%3A0x39927a4ad959da71!2sETEC%20I.T%20Training%20Center!5e0!3m2!1sen!2skh!4v1662189789906!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col4"></div>
-          <div class="col4"></div>
-          <div class="col4"></div>
-        </div>
-
-      </footer>
-    </div>  
-  </div>
+    <div class=" col-3 " style="background-color: var(--sidebar--bg); position: relative;">
+       <!-- ---sidebar--- -->
+      <div class="sidebar">
+        <h4 class="text-center bg-primary text-light fw-bold">HTML TUtorial</h4>
+        <ul class="list-unstyled">
+          
+          <li class="nav-item"><a class="nav-link" href="">Js Where To</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Output</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Statements</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Syntax</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Comments</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Variables</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Let</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Const</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Operators</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Arithmetic</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Assigment</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Precedence</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Data Types</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Functions</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Objects</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Strings</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS String Methods</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS String Search</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS String Templates</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Numbers</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Number Methods</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Arrays</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Array Methods</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Array Sort</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS iteration</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Array Const</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Dates</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Date Formats</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Get Methods</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Set Methods</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Math</a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Random </a></li>
+          <li class="nav-item"><a class="nav-link" href="">JS Comparisons </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS If else </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Switch </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Loop For </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Loop For In  </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Loop for Of </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Loop While </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Break </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Iterables </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Mypteof </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Type Conversion </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Bitwise </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS RegExp </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Errors </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Scope </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Hoisting </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Strict Mode </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS this Keyword </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Arrow function </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Classes </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Modules </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Json </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Debugging </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Style Guide </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Best Practices </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Mistakes </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Practice </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS Mistakes </a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS  Performance</a></li>  
+          <li class="nav-item"><a class="nav-link" href="">JS  Reserved Words</a></li>  
+        </ul>
+      </div>
+    </div>
 
 
-<script> 
-//<!-- owl-carousel  -->
-  
-    jQuery(document).ready(function($) {
-      var owl = $('.owl-carousel');
-      owl.on('initialize.owl.carousel initialized.owl.carousel ' +
-        'initialize.owl.carousel initialize.owl.carousel ' +
-        'resize.owl.carousel resized.owl.carousel ' +
-        'refresh.owl.carousel refreshed.owl.carousel ' +
-        'update.owl.carousel updated.owl.carousel ' +
-        'drag.owl.carousel dragged.owl.carousel ' +
-        'translate.owl.carousel translated.owl.carousel ' +
-        'to.owl.carousel changed.owl.carousel',
-        function(e) {
-          $('.' + e.type)
-            .removeClass('secondary')
-            .addClass('success');
-          window.setTimeout(function() {
-            $('.' + e.type)
-              .removeClass('success')
-              .addClass('secondary');
-          }, 500);
-        });
-      owl.owlCarousel({
-        loop: true,
-        nav: true,
-        lazyLoad: true,
-        margin: 10,
-        video: true,
-        responsive: {
-          0: {
-            items: 1
-          },
-          600: {
-            items: 3
-          },
-          960: {
-            items: 5,
-          },
-          1200: {
-            items: 6
-          }
+
+
+
+    <!-- ---------Content----------- --> 
+<div class=" col-7 p-5">  
+   <!-- ---------Content----------- --> 
+   <div class="content p-5">
+
+    <div>
+      <!-- ----------Dom js------------- -->
+      <h2>១. DOM Events</h2>
+      <h4>DOM Event Listener</h4>
+     <pre><code class="lang-html lang-js" id="copy">
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+    
+      &lt;body&gt;
+    
+        &lt;script&gt;
+        document.getElementById("myBtn").addEventListener("click", function() {
+          alert("Hello World!");
+        &lt;/script&gt;
+      &lt;/body&gt;
+    
+      &lt;/html&gt;
+     </code><button class=" float-end" onclick="copyEvent('copy')">copy</button></pre>
+     <div class="result">
+            <h2>លទ្ធផល</h2>
+          <button id="myBtn">Try it</button>
+    
+          <script>
+          document.getElementById("myBtn").addEventListener("click", function() {
+            alert("Hello World!");
+          });
+          </script>
+     </div>
+    
+     <h4>ChangeText(this)</h4>
+      <pre><code class="lang-html lang-js" id="copy1">
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+    
+      &lt;body&gt;
+    
+        &lt;script&gt;
+        function changeText(id) {
+          id.innerHTML = "Ooops!";
         }
-      });
-    });
-</script>
+        &lt;/script&gt;
+      &lt;/body&gt;
+    
+      &lt;/html&gt;
+     
+     </code> <button class=" float-end" onclick="copyEvent('copy1')">copy</button></pre>
+     <div class="result">
+      <h2>លទ្ធផល</h2>
+      <h2>JavaScript HTML Events</h2>
+     <p onclick="changeText(this)">Click me</p>
+     
+     <script>
+     function changeText(id) {
+       id.innerHTML = "Clicked!";
+     }
+     </script>
+     </div>
+    
+    </div>
+    
+    
+        </div>  
+        <footer class="Address">
+          <h1 class="text-center mb-5">Address</h1>
+          <div class="row">
+            <div class="googlemap mb-5">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7817.841194271465!2d104.8848455!3d11.5575499!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951ec69282a81%3A0x39927a4ad959da71!2sETEC%20I.T%20Training%20Center!5e0!3m2!1sen!2skh!4v1662189789906!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div> 
+</div>
+<div class=" col-2  ads text-center " style="background-color: var(--sidebar--bg);"> 
+  <img src="/Image/ads/12485347794846134331.png" class="mt-5"  alt=""><br>
+  <img src="/Image/ads/16497773530891370813.png" class="mt-5 w-50"  alt="">
+  <img src="/Image/ads/7709431071627231265.png" class="stick w-75 mt-5" alt="">
+</div>
+</div>  
+
+
+</footer>
+  </div>
+
+
+
+   <!-- -----slide(js)---- -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
 
 <script> 
 //---copy---
@@ -287,6 +463,7 @@
 </script>
 
 <script>
+ // --coopy--
 const copy = document.querySelector("button.copy");
 copy.addEventListener("click", function(){
 copy.innerHTML = "coped";
@@ -298,6 +475,89 @@ copy.innerHTML = "coped";
 
 <!-- ----PrismJs---  -->
 <script src="/PrismJs/prism.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+<footer class="text-light  bg-dark">
+  <!-- ---footer--- -->
+  <div class="container p-4 bg-dark">
+    <div class="row pb-4">
+      <div class="col-lg-6 col-md-12">
+        <h5 class="mb-3"><a class="mb-4" href="#"><img src="/Image/etech.jpg" width="80px" alt=""></a></h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+          voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-6  d-flex justify-content-center">
+        <ul class="" >
+          <h5 class="text-uppercase mb-4">Front-End</h5>
+          <li>
+            <a class="nav-link" href="#">HTML</a>
+          </li>
+          <li>
+            <a  class="nav-link" href="">CSS</a>
+          </li>
+          <li>
+            <a class="nav-link" href="">Bootstrap</a>
+          </li>
+          <li>
+            <a  class="nav-link" href="">JavaScript</a>
+          </li>
+          <li>
+            <a  class="nav-link" href="">Jquery</a>
+          </li>
+      </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6  d-flex justify-content-center">
+        <ul class="" >
+          <h5 class="text-uppercase mb-4">Back-End</h5>
+          <li>
+            <a class="nav-link" href="#">PHP</a>
+          </li>
+          <li>
+            <a  class="nav-link" href="">SQL</a>
+          </li>
+          <li>
+            <a class="nav-link" href="">NodeJs</a>
+          </li>
+          <li>
+            <a  class="nav-link" href="">Laravel</a>
+          </li>
+          <li>
+            <a  class="nav-link" href="">Phyton</a>
+          </li>
+      </ul>
+      </div>
+    </div>
+    
+    <div class="row bg-primary bg-opacity-10 p-4">
+      <div class="col-lg-6 col-md-6 d-flex align-self-center">
+        © 2020 Copyright
+        <a class="text-white nav-link ms-1" href="">ETECT</a>
+      </div>
+      <div class="icon col-lg-6 col-md-6 d-flex justify-content-end">
+        <ul class="nav d-flex list-unstyled">
+          <li><i class="facebook fa-brands fa-facebook fs-1 px-1 "></i></li>
+          <li><i class="telegram fa-brands fa-telegram fs-1 px-1 "></i>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </body>
 

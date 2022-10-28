@@ -13,24 +13,33 @@
 
 </head>
 <body>
-    <form class="container border rounded-4 p-5" style="width:700px;">
+    <form class="container border rounded-4 p-5" id="formLogin" style="width:700px;">
         <h1 class="text-center mb-5">Login</h1>
 
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Gmail</label>
-            <input type="gmail" class="form-control" id="exampleInputPassword1" placeholder="Your Gmail">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <label for="exampleInputPassword1" class="form-label">Username</label>
+            <input type="text" class="form-control"  placeholder="Your Username">
+            <div id="emailHelp" class="form-text err-message">We'll never share your email with anyone else.</div>
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Your password">
-          <div id="emailHelp" class="form-text">Don't Share your password to anyone</div>
+          <input type="password" class="form-control password" id="exampleInputPassword1" placeholder="Your password">
+          <div id="emailHelp" class="form-text error-message">Don't Share your password to anyone</div>
         </div>
         <div class="mb-3">
   
         <div class="d-flex justify-content-center mt-4">   
-            <a href="Index.html" class="btn btn-primary w-75">Login</a>
+    
+            <input type="submit" class="btn btn-primary w-75 submit" value="submit">
         </div>
       </form>
+      <script src="" >
+            const form = document.queryselector("#formLogin");
+          const Gmail = form.Queryselector("#GmailField");
+          console.log("monorum@gmail.com",Gmail);
+            form.addEventListener("submit", function(e){
+                e.preventDefault();
+            })
+      </script>
 </body>
 </html>
